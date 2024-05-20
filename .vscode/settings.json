@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "ostream": "cpp",
+        "string": "cpp",
+        "new": "cpp",
+        "span": "cpp",
+        "type_traits": "cpp"
+    },
+    "editor.tabSize": 2
+}
