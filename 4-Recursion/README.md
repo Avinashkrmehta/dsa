@@ -37,7 +37,47 @@ Every statement in a program take one unit of time. We don't mention seconds or 
 <img src="./images/image_j.png" width="600" />
 <img src="./images/image_k.png" width="600" />
 
+## TailHead
 
+```ruby
+Head Recursion
+#include <stdio.h>
+void fun(int n){
+  if(n>0){
+    fun(n-1);
+    printf("%d ",n);
+  }
+}
+
+int main() {
+  int x=3;
+  fun(x);
+  return 0;
+}
+
+Tail Recursion
+#include <stdio.h>
+void fun(int n)
+{
+  if(n>0){
+    printf("%d ",n);
+    fun(n-1);
+  }
+}
+
+int main() {
+  int x=3;
+  fun(x);
+  return 0;
+}
+
+```
+
+## Static and Global variable in Recursion
+
+<img src="./images/image_l.png" width="600" />
+<img src="./images/image_m.png" width="600" />
+<img src="./images/image_n.png" width="600" />
 
 
 
