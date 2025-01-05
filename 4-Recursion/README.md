@@ -80,7 +80,32 @@ int main() {
 <img src="./images/image_n.png" width="600" />
 
 
+## Types of Recursion
+<img src="./images/image_o.png" width="600" />
 
+
+## Tail Recursion
+In tail recursion in returing time it doesn't perform any operation.
+<img src="./images/image_p.png" width="600" />
+
+Tail recursion can be easily converted in the form of loop.
+<img src="./images/image_r.png" width="600" />
+
+## Head Recursion
+In head recursion the function doesn't do any operation at the time of calling, it's perform operation at returing time.
+
+<img src="./images/image_s.png" width="600" />
+
+Head Recursion can be easily converted by looking the function into loop. As it doing operation at returing time.
+
+<img src="./images/image_t.png" width="600" />
+
+## Tree Recursion
+If a function calling itself more than one time, then it is tree recursion
+
+<img src="./images/image_u.png" width="600" />
+<img src="./images/image_v.png" width="600" />
+<img src="./images/image_w.png" width="600" />
 
 
 
