@@ -107,6 +107,57 @@ If a function calling itself more than one time, then it is tree recursion
 <img src="./images/image_v.png" width="600" />
 <img src="./images/image_w.png" width="600" />
 
+## Indirect Recursion
+In a indirect function there are multiple function where it form a circular loop of function.
+
+<img src="./images/image_x.png" width="600" />
+<img src="./images/image_y.png" width="600" />
+
+## Nested Recursion
+
+In nested recursion the recursive function the parameter passed is recursive call.
+
+we can call recursion inside recursion.
+
+<img src="./images/image_z.png" width="600" />
+<img src="./images/image_za.png" width="600" />
+
+
+
+## Sum of first n natural number
+<img src="./images/image_zb.png" width="600" />
+<img src="./images/image_zc.png" width="600" />
+<img src="./images/image_zd.png" width="600" />
+
+
+## Factorial of a given number
+<img src="./images/image_ze.png" width="600" />
+
+## Power using recursion that is exponent using recursion
+
+<img src="./images/image_zf.png" width="600" />
+<img src="./images/image_zg.png" width="600" />
+<img src="./images/image_zh.png" width="600" />
+
+## Taylor Series using recursive 
+
+<img src="./images/image_zi.png" width="600" />
+<img src="./images/image_zj.png" width="600" />
+<img src="./images/image_zk.png" width="600" />
+<img src="./images/image_zl.png" width="600" />
+
+
+## Taylor series using Horner's Rule
+
+<img src="./images/image_zm.png" width="600" />
+<img src="./images/image_zn.png" width="600" />
+<img src="./images/image_zo.png" width="600" />
+
+
+
+
+
+
 
 
 

@@ -1,4 +1,4 @@
-// Static and Global variables in recursion
+// Tree recursion
 
 #include<bits/stdc++.h>
 using namespace std;
