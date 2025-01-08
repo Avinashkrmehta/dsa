@@ -86,9 +86,11 @@ int main() {
 
 ## Tail Recursion
 In tail recursion in returing time it doesn't perform any operation.
+
 <img src="./images/image_p.png" width="600" />
 
 Tail recursion can be easily converted in the form of loop.
+
 <img src="./images/image_r.png" width="600" />
 
 ## Head Recursion
@@ -125,12 +127,14 @@ we can call recursion inside recursion.
 
 
 ## Sum of first n natural number
+
 <img src="./images/image_zb.png" width="600" />
 <img src="./images/image_zc.png" width="600" />
 <img src="./images/image_zd.png" width="600" />
 
 
 ## Factorial of a given number
+
 <img src="./images/image_ze.png" width="600" />
 
 ## Power using recursion that is exponent using recursion
@@ -153,9 +157,18 @@ we can call recursion inside recursion.
 <img src="./images/image_zn.png" width="600" />
 <img src="./images/image_zo.png" width="600" />
 
+## Fibonacci Series using recursion
 
+<img src="./images/image_zp.png" width="600" />
+<img src="./images/image_zq.png" width="600" />
+<img src="./images/image_zr.png" width="600" />
+<img src="./images/image_zs.png" width="600" />
 
+## Combination Formula using recursion
 
+<img src="./images/image_zt.png" width="600" />
+<img src="./images/image_zu.png" width="600" />
+<img src="./images/image_zv.png" width="600" />
 
 
 
