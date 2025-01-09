@@ -20,19 +20,16 @@ While both loops and recursion involve repetition, a loop has only an ascending 
 
 <img src="./images/image_g.png" width="600" />
 
+## How Recursion Uses Stack
 
-## How recursion uses stack
-
-Model of memory divided into three parts heap, stack and main memory.
-For n toatal will be n+1 activation records.
+Model of memory divided into three parts: heap, stack, and main memory. For `n` total, there will be `n+1` activation records.
 
 <img src="./images/image_h.png" width="600" />
 <img src="./images/image_i.png" width="600" />
 
+## Recurrence Relation - Time Complexity of Recursion
 
-## Recurrence Relation - Time complexity of Recursion
-
-Every statement in a program take one unit of time. We don't mention seconds or milliseconds of time. 
+Every statement in a program takes one unit of time. We don't mention seconds or milliseconds of time.
 
 <img src="./images/image_j.png" width="600" />
 <img src="./images/image_k.png" width="600" />
@@ -70,106 +67,120 @@ int main() {
   fun(x);
   return 0;
 }
-
 ```
 
-## Static and Global variable in Recursion
+## Static and Global Variables in Recursion
 
 <img src="./images/image_l.png" width="600" />
 <img src="./images/image_m.png" width="600" />
 <img src="./images/image_n.png" width="600" />
 
-
 ## Types of Recursion
 <img src="./images/image_o.png" width="600" />
 
-
 ## Tail Recursion
-In tail recursion in returing time it doesn't perform any operation.
+In tail recursion, during the returning time, it doesn't perform any operation.
 
 <img src="./images/image_p.png" width="600" />
 
-Tail recursion can be easily converted in the form of loop.
+Tail recursion can be easily converted into the form of a loop.
 
 <img src="./images/image_r.png" width="600" />
 
 ## Head Recursion
-In head recursion the function doesn't do any operation at the time of calling, it's perform operation at returing time.
+In head recursion, the function doesn't do any operation at the time of calling; it performs operations at returning time.
 
 <img src="./images/image_s.png" width="600" />
 
-Head Recursion can be easily converted by looking the function into loop. As it doing operation at returing time.
+Head recursion can be easily converted into a loop by looking at the function.
 
 <img src="./images/image_t.png" width="600" />
 
 ## Tree Recursion
-If a function calling itself more than one time, then it is tree recursion
+If a function calls itself more than once, then it is tree recursion.
 
 <img src="./images/image_u.png" width="600" />
 <img src="./images/image_v.png" width="600" />
 <img src="./images/image_w.png" width="600" />
 
 ## Indirect Recursion
-In a indirect function there are multiple function where it form a circular loop of function.
+In indirect recursion, there are multiple functions where it forms a circular loop of functions.
 
 <img src="./images/image_x.png" width="600" />
 <img src="./images/image_y.png" width="600" />
 
 ## Nested Recursion
 
-In nested recursion the recursive function the parameter passed is recursive call.
-
-we can call recursion inside recursion.
+In nested recursion, the recursive function's parameter passed is a recursive call. We can call recursion inside recursion.
 
 <img src="./images/image_z.png" width="600" />
 <img src="./images/image_za.png" width="600" />
 
-
-
-## Sum of first n natural number
+## Sum of First n Natural Numbers
 
 <img src="./images/image_zb.png" width="600" />
 <img src="./images/image_zc.png" width="600" />
 <img src="./images/image_zd.png" width="600" />
 
-
-## Factorial of a given number
+## Factorial of a Given Number
 
 <img src="./images/image_ze.png" width="600" />
 
-## Power using recursion that is exponent using recursion
+## Power Using Recursion (Exponent Using Recursion)
 
 <img src="./images/image_zf.png" width="600" />
 <img src="./images/image_zg.png" width="600" />
 <img src="./images/image_zh.png" width="600" />
 
-## Taylor Series using recursive 
+[Power using recursion](/4-Recursion/programs/cpp/8-program.cpp)
+
+## Taylor Series Using Recursion
 
 <img src="./images/image_zi.png" width="600" />
 <img src="./images/image_zj.png" width="600" />
 <img src="./images/image_zk.png" width="600" />
 <img src="./images/image_zl.png" width="600" />
 
+[Taylor Series using recursion](/4-Recursion/programs/cpp/9-program.cpp)
 
-## Taylor series using Horner's Rule
+## Taylor Series Using Horner's Rule
 
 <img src="./images/image_zm.png" width="600" />
 <img src="./images/image_zn.png" width="600" />
 <img src="./images/image_zo.png" width="600" />
 
-## Fibonacci Series using recursion
+[Taylor series using Horner's Rule](/4-Recursion/programs/cpp/10-program.cpp)
+
+## Fibonacci Series Using Recursion
 
 <img src="./images/image_zp.png" width="600" />
 <img src="./images/image_zq.png" width="600" />
 <img src="./images/image_zr.png" width="600" />
 <img src="./images/image_zs.png" width="600" />
 
-## Combination Formula using recursion
+[Fibonacci Series using Memoization](/4-Recursion/programs/cpp/11-program.cpp)
+
+## Combination Formula Using Recursion
 
 <img src="./images/image_zt.png" width="600" />
 <img src="./images/image_zu.png" width="600" />
 <img src="./images/image_zv.png" width="600" />
 
+[Combination Formula using recursion](/4-Recursion/programs/cpp/12-program.cpp)
+
+## Tower of Hanoi Problem
+
+<img src="./images/image_zw.png" width="600" />
+<img src="./images/image_zx.png" width="600" />
+<img src="./images/image_zy.png" width="600" />
+<img src="./images/image_zz.png" width="600" />
+
+## quiz problem
+
+<img src="./images/image_zza.png" width="600" />
+<img src="./images/image_zzb.png" width="600" />
+<img src="./images/image_zzc.png" width="600" />
+<img src="./images/image_zzd.png" width="600" />
 
 
 
@@ -180,30 +191,24 @@ we can call recursion inside recursion.
 
 
 
+---
 
+## Recursion Notes
 
+Recursion is a programming technique where a function calls itself in order to solve a problem. It is a powerful tool for solving problems that can be broken down into smaller, similar sub-problems.
 
-
-
-
-
-
-RECURSION NOTES: - 
-
-Recursion is a programming technique where a function calls itself in order to solve a problem. It is a powerful tool for solving problems that can be broken down into smaller, similar sub-problems. 
-
-## How Recursion Works
+### How Recursion Works
 
 A recursive function typically has two main components:
 1. **Base Case**: The condition under which the function stops calling itself. This prevents infinite recursion.
 2. **Recursive Case**: The part of the function where it calls itself with a modified argument, moving towards the base case.
 
-### Example: Factorial Function
+#### Example: Factorial Function
 
 The factorial of a non-negative integer `n` is the product of all positive integers less than or equal to `n`. It is denoted by `n!`.
 
-#### Factorial Function in Pseudocode
-```
+##### Factorial Function in Pseudocode
+```pseudocode
 function factorial(n):
     if n == 0:
         return 1
@@ -241,11 +246,11 @@ factorial(3)
                               +---> 1 (base case)
 ```
 
-## Advantages of Recursion
+### Advantages of Recursion
 - Simplifies code for problems that have a natural recursive structure (e.g., tree traversal, factorial calculation).
 - Reduces the need for complex loops and auxiliary data structures.
 
-## Disadvantages of Recursion
+### Disadvantages of Recursion
 - Can lead to high memory usage due to the call stack.
 - May result in stack overflow if the base case is not reached or the recursion depth is too large.
 
