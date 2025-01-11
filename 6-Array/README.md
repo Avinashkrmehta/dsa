@@ -31,3 +31,28 @@ if you don't delete unused memory it will cause memory leak.
 
 <img src="./images/imageh.png" width="500" />
 <img src="./images/imagei.png" width="500" />
+
+## Arrays Representations
+
+Formula is relative formula based on base address.
+<img src="./images/imagej.png" width="500" />
+<img src="./images/imagek.png" width="500" />
+
+## Row Major Formulae for 2D arrays
+
+<img src="./images/imagel.png" width="500" />
+<img src="./images/imagem.png" width="500" />
+
+## Column Major Formulae for 2D arrays
+
+<img src="./images/imagen.png" width="500" />
+
+## Formulas for nD Arrays
+ 
+<img src="./images/imageo.png" width="500" />
+<img src="./images/imagep.png" width="500" />
+<img src="./images/imageq.png" width="500" />
+
+## Formulas for 3D Arrays
+
+<img src="./images/imager.png" width="500" />
