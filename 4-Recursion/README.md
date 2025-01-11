@@ -183,16 +183,6 @@ In nested recursion, the recursive function's parameter passed is a recursive ca
 <img src="./images/image_zzd.png" width="600" />
 
 
-
-
-
-
-
-
-
-
----
-
 ## Recursion Notes
 
 Recursion is a programming technique where a function calls itself in order to solve a problem. It is a powerful tool for solving problems that can be broken down into smaller, similar sub-problems.
