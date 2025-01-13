@@ -14,3 +14,23 @@
 
 #### Delete
 <img src="./images/imagee.png" width="500" />
+
+## Linear Search
+
+<img src="./images/imagef.png" width="500" />
+<img src="./images/imageg.png" width="500" />
+
+## Improvement of Linear saearch
+
+<img src="./images/imageh.png" width="500" />
+<img src="./images/imagei.png" width="500" />
+
+## Binary Search
+
+<img src="./images/imagej.png" width="500" />
+
+## Binary Search Algorithms
+
+<img src="./images/imagek.png" width="500" />
+
+## Analysis BinarySearch
