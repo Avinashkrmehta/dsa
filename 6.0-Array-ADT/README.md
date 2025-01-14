@@ -34,3 +34,14 @@
 <img src="./images/imagek.png" width="500" />
 
 ## Analysis BinarySearch
+
+<img src="./images/imagel.png" width="500" />
+<img src="./images/imagem.png" width="500" />
+
+## Average case Analysis of Binary Search
+
+<img src="./images/imagen.png" width="500" />
+<img src="./images/imageo.png" width="500" />
+
+
+## Get,Set,Avg,Max function in  Array
