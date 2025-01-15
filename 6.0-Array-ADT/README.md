@@ -45,3 +45,19 @@
 
 
 ## Get,Set,Avg,Max function in  Array
+
+<img src="./images/imagep.png" width="500" />
+<img src="./images/imageq.png" width="500" />
+<img src="./images/imager.png" width="500" />
+<img src="./images/images.png" width="500" />
+<img src="./images/imaget.png" width="500" />
+<img src="./images/imageu.png" width="500" />
+<img src="./images/imagev.png" width="500" />
+
+
+## Reverse and Shift an Array
+
+<img src="./images/imagew.png" width="500" />
+<img src="./images/imagex.png" width="500" />
+<img src="./images/imagey.png" width="500" />
+<img src="./images/imagez.png" width="500" />
