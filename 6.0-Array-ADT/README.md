@@ -61,3 +61,29 @@
 <img src="./images/imagex.png" width="500" />
 <img src="./images/imagey.png" width="500" />
 <img src="./images/imagez.png" width="500" />
+
+## Check if Array is sorted
+
+<img src="./images/imageza.png" width="500" />
+<img src="./images/imagezb.png" width="500" />
+<img src="./images/imagezc.png" width="500" />
+<img src="./images/imagezd.png" width="500" />
+
+## Mering Array
+
+<img src="./images/imageze.png" width="500" />
+<img src="./images/imagezf.png" width="500" />
+
+## Set operations on Array
+
+<img src="./images/imagezg.png" width="500" />
+
+### Union Operation
+<img src="./images/imagezh.png" width="500" />
+
+### Intersection Operation
+<img src="./images/imagezi.png" width="500" />
+
+### Difference Operation
+<img src="./images/imagezj.png" width="500" />
+
