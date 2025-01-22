@@ -1,10 +1,5 @@
-Enter size of an array: 5
-Menu
-1. Display Array
-2. Append
-3. Insert
-4. Delete
-5. Linear Search
-6. Exit
-Enter your choice: 1
-Elements are: Enter your choice: 
+8
+5 0 0 0 
+0 8 0 0 
+0 0 9 0 
+0 0 0 12 
