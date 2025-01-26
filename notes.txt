@@ -1,0 +1,5 @@
+To run the program in windows powershell.
+step 1 -> g++ file.cpp //it will compile the file into a.exe
+step 2 -> .\a.exe //this will run the program in windows.
+
+-------------------------------------------------------------------
