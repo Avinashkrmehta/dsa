@@ -20,6 +20,39 @@
 <img src="./images/imagei.png" width="500" />
 <img src="./images/imagej.png" width="500" />
 
+## Counting Nodes in link list
+<img src="./images/imagek.png" width="500" />
+<img src="./images/imagel.png" width="500" />
+<img src="./images/imagem.png" width="500" />
+<img src="./images/imagen.png" width="500" />
+
+## Sum of all element in linklist
+<img src="./images/imageo.png" width="500" />
+
+## Maximum element in linklist
+<img src="./images/imagep.png" width="500" />
+
+## Searching in a linklist
+<img src="./images/imageq.png" width="500" />
+<img src="./images/imager.png" width="500" />
+<img src="./images/images.png" width="500" />
+<img src="./images/imaget.png" width="500" />
+<img src="./images/imageu.png" width="500" />
+
+## Inserting in linklist
+<img src="./images/imagev.png" width="500" />
+<img src="./images/imagew.png" width="500" />
+
+
+
+
+
+
+
+
+
+
+
 
 ## Why we need Dynamic data structure
 
