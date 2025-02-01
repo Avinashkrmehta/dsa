@@ -42,10 +42,18 @@
 ## Inserting in linklist
 <img src="./images/imagev.png" width="500" />
 <img src="./images/imagew.png" width="500" />
+<img src="./images/imagex.png" width="500" />
 
+## Creating Linklist using insert
+<img src="./images/imagey.png" width="500" />
+<img src="./images/imagez.png" width="500" />
 
-
-
+## Inserting in a sorted Linked List
+<img src="./images/imageza.png" width="500" />
+  
+## Deleting from LinkList
+<img src="./images/imagezb.png" width="500" />
+<img src="./images/imagezc.png" width="500" />
 
 
 
