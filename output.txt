@@ -1,5 +1,1 @@
-Enter size: 5
-Stack Overflow
-Popped: 50
-Peek: 30
-40 30 20 10 
+0

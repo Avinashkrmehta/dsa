@@ -15,3 +15,20 @@
 <img src="./images/imagei.png" width="500" />
 <img src="./images/imagej.png" width="500" />
 <img src="./images/imagek.png" width="500" />
+
+## STack Using LinkList
+<img src="./images/imagel.png" width="500" />
+
+## Stack Operations using Linked List
+<img src="./images/imagem.png" width="500" />
+<img src="./images/imagen.png" width="500" />
+<img src="./images/imageo.png" width="500" />
+<img src="./images/imagep.png" width="500" />
+
+## Parenthesis Matching
+<img src="./images/imageq.png" width="500" />
+
+## Program for parentheisis matching
+<img src="./images/imager.png" width="500" />
+<img src="./images/images.png" width="500" />
+<img src="./images/imaget.png" width="500" />
