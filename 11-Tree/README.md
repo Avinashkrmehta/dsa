@@ -75,3 +75,36 @@ A tree where every node has at most two children is a binary tree. Nodes can be 
 ## Height vs Node of Strict Binary Tree
 <img src="./images/imageo.png" width="500" />
 <img src="./images/imagep.png" width="500" />
+
+## Internal nodes vs External Nodes in Strict Binary Tree
+<img src="./images/imageq.png" width="500" />
+
+## n-array trees
+<img src="./images/imager.png" width="500" />
+<img src="./images/images.png" width="500" />
+<img src="./images/imaget.png" width="500" />
+
+## stricit -n -array Trees
+<img src="./images/imageu.png" width="500" />
+
+## Analysis of n-Ary Trees
+<img src="./images/imagev.png" width="500" />
+<img src="./images/imagew.png" width="500" />
+<img src="./images/imagex.png" width="500" />
+<img src="./images/imagey.png" width="500" />
+
+## Representation Of Binary Tree
+<img src="./images/imagez.png" width="500" />
+<img src="./images/imageza.png" width="500" />
+
+## Linked representation of Binary Tree
+<img src="./images/imagezb.png" width="500" />
+<img src="./images/imagezc.png" width="500" />
+
+## full vs complete binary tree
+<img src="./images/imagezd.png" width="500" />
+
+## strict vs complete Binary Tree
+<img src="./images/imageze.png" width="500" />
+<img src="./images/imagezf.png" width="500" />
+
