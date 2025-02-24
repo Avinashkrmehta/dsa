@@ -106,5 +106,33 @@ A tree where every node has at most two children is a binary tree. Nodes can be 
 
 ## strict vs complete Binary Tree
 <img src="./images/imageze.png" width="500" />
-<img src="./images/imagezf.png" width="500" />
 
+## Binary Tree Traversals
+<img src="./images/imagezf.png" width="500" />
+<img src="./images/imagezg.png" width="500" />
+
+## Binary Tree Traversals easy method 1
+<img src="./images/imagezh.png" width="500" />
+<img src="./images/imagezi.png" width="500" />
+
+## Binary Tree Traversals easy method 2
+<img src="./images/imagezj.png" width="500" />
+<img src="./images/imagezk.png" width="500" />
+
+## Binary Tree Traversals easy method 3
+<img src="./images/imagezk.png" width="500" />
+
+## Creating Binary Tree
+<img src="./images/imagezl.png" width="500" />
+
+## Program to create Binary Tree
+<img src="./images/imagezm.png" width="500" />
+<img src="./images/imagezn.png" width="500" />
+
+## Preorder Tree Traversal
+<img src="./images/imagezo.png" width="500" />
+<img src="./images/imagezp.png" width="500" />
+
+## Inorder Tree Traversal
+<img src="./images/imagezq.png" width="500" />
+<img src="./images/imagezr.png" width="500" />
