@@ -136,3 +136,22 @@ A tree where every node has at most two children is a binary tree. Nodes can be 
 ## Inorder Tree Traversal
 <img src="./images/imagezq.png" width="500" />
 <img src="./images/imagezr.png" width="500" />
+
+## Iterative Preorder tree traversals
+<img src="./images/imagezs.png" width="500" />
+
+## Iterative Inorder tree traversals
+<img src="./images/imagezt.png" width="500" />
+
+## Iterative Postorder tree traversals
+<img src="./images/imagezu.png" width="500" />
+
+
+## Levelorder tree traversals
+<img src="./images/imagezv.png" width="500" />
+
+## Can we generate tree from traversals
+<img src="./images/imagezw.png" width="500" />
+
+## Generating tree from traversals
+<img src="./images/imagezx.png" width="500" />
