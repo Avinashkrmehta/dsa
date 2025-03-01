@@ -155,3 +155,16 @@ A tree where every node has at most two children is a binary tree. Nodes can be 
 
 ## Generating tree from traversals
 <img src="./images/imagezx.png" width="500" />
+<img src="./images/imagezy.png" width="500" />
+
+## Height and count of binary Tree
+<img src="./images/imagezz.png" width="500" />
+<img src="./images/imagezza.png" width="500" />
+<img src="./images/imagezzb.png" width="500" />
+<img src="./images/imagezzc.png" width="500" />
+
+## Count leaf nodes of binary tree
+<img src="./images/imagezzd.png" width="500" />
+<img src="./images/imagezze.png" width="500" />
+<img src="./images/imagezzf.png" width="500" />
+<img src="./images/imagezzg.png" width="500" />
