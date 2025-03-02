@@ -14,5 +14,21 @@
 
 ## Recursive Insert in Binary Search Tree
 <img src="./images/imagej.png" width="500" />
+
+## Creating a Binary Tree
 <img src="./images/imagek.png" width="500" />
 
+## Deleting from Binary Search tree
+<img src="./images/imagel.png" width="500" />
+<img src="./images/imagem.png" width="500" />
+<img src="./images/imagen.png" width="500" />
+
+## Generating BST from preorder
+<img src="./images/imageo.png" width="500" />
+<img src="./images/imagep.png" width="500" />
+
+## Program for Generating BST from preorder
+<img src="./images/imageq.png" width="500" />
+
+## Drawback of Binary Search Tree
+<img src="./images/imager.png" width="500" />
