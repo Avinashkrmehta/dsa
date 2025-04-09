@@ -32,6 +32,14 @@
 <img src="./images/imagem.png" width="500" />
 <img src="./images/imagen.png" width="500" />
 
+## Heapify
+<img src="./images/imageo.png" width="500" />
+<img src="./images/imagep.png" width="500" />
+<img src="./images/imageq.png" width="500" />
+
+## Heap as Priority Queue
+<img src="./images/imager.png" width="500" />
+<img src="./images/images.png" width="500" />
 
 
 
@@ -45,14 +53,9 @@
 
 
 
-
-
-# 📚 Binary Heap - Notes
+# 📚 Binary Heap
 
 ## 🔍 Overview
-
-In this topic, we will cover the following:
-
 - What is a Heap?
 - Insertion in a Heap
 - Deletion from a Heap
@@ -210,10 +213,6 @@ After each insertion, elements are **rearranged** to restore the **max heap** pr
 
 ---
 
-Here’s a clean, concise summary of the transcript you provided — it's been rephrased into a clear explanation of the **heap insert operation** along with its **time complexity analysis**:
-
----
-
 ### 📌 Heap Insertion Procedure (Min/Max Heap)
 
 To insert an element into a heap, follow these steps:
@@ -345,14 +344,7 @@ Heap:  [40, 30, 25, 20, 15, 10, 12]
 
 ---
 
-Here’s a clean, structured `README.md` file draft based on the transcript you provided, covering the key concepts of heap deletion and heap sort:
-
----
-
-# 🧮 Heap Deletion & Heap Sort – Explained
-
-This README summarizes the procedure of **deletion in a Max Heap** and introduces the concept of **Heap Sort** using deletion operations.
-
+# 🧮 Heap Deletion & Heap Sort
 ---
 
 ## 📌 Key Concepts
@@ -458,6 +450,352 @@ Deleted Elements: [40]
 Use an array to represent the heap. After every deletion, store the deleted element in the last free index. Eventually, the array will become sorted in ascending order.
 
 ---
+Here is an updated and detailed section for your **README.md** file based on the latest transcript, covering the **C implementation of Max Heap and Heap Sort**, including **insert**, **delete**, and **heap sort** logic:
 
+---
 
+## 🧑‍💻 Max Heap and Heap Sort in C
 
+### 📋 Overview
+
+This section presents the complete implementation of a **Max Heap** in C, covering the following operations:
+
+- Insert elements into the heap
+- Delete elements from the heap (only the root)
+- Perform Heap Sort using heap operations
+
+The heap is implemented using an array, and the sorting happens **in-place** using the heap property.
+
+---
+
+### 🧱 Initial Setup
+
+- Heap is implemented using an array of size `n+1`.
+- **Index 0 is unused** for easier parent-child calculations.
+- Elements are stored from index 1 onward.
+- For any element at index `i`:
+  - Parent: `i / 2`
+  - Left child: `2 * i`
+  - Right child: `2 * i + 1`
+
+---
+
+### 🔧 Insert Operation
+
+```c
+void insert(int H[], int n) {
+    int i = n, temp = H[i];
+    while (i > 1 && temp > H[i / 2]) {
+        H[i] = H[i / 2]; // Move parent down
+        i = i / 2;       // Move up the tree
+    }
+    H[i] = temp;         // Place at correct position
+}
+```
+
+- Inserts a new element at the end and **bubbles it up** to maintain max heap property.
+- Called in a loop to build the heap from an array.
+
+---
+
+### ❌ Delete Operation (Root Element Only)
+
+```c
+int delete(int H[], int n) {
+    int x = H[1];               // Element to delete (root)
+    int i = 1, j = 2 * i;
+    int temp = H[n];
+    H[1] = temp;                // Move last element to root
+
+    while (j <= n - 1) {
+        if (j < n - 1 && H[j + 1] > H[j])
+            j++;                // Select larger child
+        if (H[i] < H[j]) {
+            // Swap parent and child
+            int t = H[i];
+            H[i] = H[j];
+            H[j] = t;
+            i = j;
+            j = 2 * i;
+        } else {
+            break;
+        }
+    }
+    H[n] = x; // Store deleted value at the end (used for heap sort)
+    return x;
+}
+```
+
+- Removes the **root element**, replaces it with the last element, and **bubbles it down** to restore heap.
+- The deleted element is moved to the end of the array (useful for heap sort).
+
+---
+
+### 🌀 Heap Sort Logic
+
+```c
+// Building the heap
+for (int i = 2; i <= n; i++) {
+    insert(H, i);
+}
+
+// Deleting from heap one by one
+for (int i = n; i > 1; i--) {
+    delete(H, i);
+}
+```
+
+- First, build a max heap from the array.
+- Then, repeatedly delete the root element.
+- The deleted elements are stored at the end of the array, resulting in **ascending order**.
+
+---
+
+### ✅ Output Example
+
+Given input elements:
+```text
+0 (ignored), 30, 35, 5, 40, 25, 10, 15
+```
+
+After Heap Sort:
+```text
+5 10 15 25 30 35 40
+```
+
+---
+
+### 🧪 Notes
+
+- `insert()` ensures the heap property during element addition.
+- `delete()` always removes the max element (root) and places it at the last available index.
+- The heap sort leverages this by **storing deleted elements at the end**, resulting in sorted order.
+
+---
+
+### 📌 Final Thoughts
+
+- This C program is a simple and efficient implementation of **Max Heap and Heap Sort**.
+- Great for understanding **heap data structures**, **priority queues**, and **sorting in-place**.
+
+---
+
+Here’s a detailed and well-structured addition to your **README.md** file based on the final transcript. This section covers the concept and implementation of the **heapify procedure** in Max Heaps and contrasts it with the traditional insert-based heap creation.
+
+---
+
+## ⚙️ Heapify in Max Heap (Efficient Heap Creation)
+
+### 🧩 What is Heapify?
+
+**Heapify** is a bottom-up procedure for converting a binary tree (usually represented as an array) into a valid **Max Heap**. It is more efficient than inserting elements one by one using the traditional insert operation.
+
+---
+
+### 🔍 Key Observations
+
+#### 🔄 Insert-Based Heap Construction
+- Insertion inserts one element at a time.
+- Each new element is added at the end and bubbled **upwards (leaf to root)**.
+- Each insert operation can take up to `O(log n)` time.
+- Total time complexity: **O(n log n)**
+
+#### 🔽 Heapify-Based Heap Construction
+- Starts from the **last internal node** and proceeds **downward (root to leaves)**.
+- Uses comparisons and swaps with children to maintain the max heap property.
+- Most of the elements (leaves) are ignored in the process.
+- Total time complexity: **O(n)**
+
+---
+
+### 📌 Insert vs. Delete vs. Heapify
+
+| Operation     | Direction of Adjustment | Time per Element | Use Case                  |
+|---------------|-------------------------|------------------|---------------------------|
+| Insert        | Leaf → Root             | O(log n)         | Building heap incrementally |
+| Delete (root) | Root → Leaf             | O(log n)         | Removing max element       |
+| **Heapify**   | Root → Leaf             | O(1)–O(log n)    | **Efficient heap construction** |
+
+---
+
+### 🧠 How Heapify Works (Conceptually)
+
+Given an array representation of a binary tree:
+```text
+Index:  1   2   3   4   5   6   7   8   9
+Values: 5  10  30  20  35  25  40  15
+```
+
+To apply `heapify`, do the following:
+1. Start from the last internal node (i.e., `n/2`) and move **backwards** to the root.
+2. At each node, compare the value with its **largest child**.
+3. If the parent is smaller, **swap** with the larger child and continue downwards.
+4. Skip the leaves (they’re already heaps of size 1).
+
+---
+
+### 🛠️ Heapify Pseudocode
+
+```c
+void heapify(int H[], int n, int i) {
+    int largest = i;
+    int left = 2 * i;
+    int right = 2 * i + 1;
+
+    if (left <= n && H[left] > H[largest])
+        largest = left;
+    if (right <= n && H[right] > H[largest])
+        largest = right;
+
+    if (largest != i) {
+        swap(H[i], H[largest]);
+        heapify(H, n, largest); // Recursively heapify the affected subtree
+    }
+}
+```
+
+### 🔄 Build Max Heap using Heapify
+
+```c
+void buildHeap(int H[], int n) {
+    for (int i = n / 2; i >= 1; i--) {
+        heapify(H, n, i);
+    }
+}
+```
+
+---
+
+### ✅ Benefits of Heapify
+
+- **Efficient**: Runs in **O(n)** time.
+- **Simple**: Easy to implement and avoids repeated insertions.
+- **Scalable**: Best suited for large data sets needing heap sorting or priority queue processing.
+
+---
+
+### 📌 Visual Insight
+
+- **Insert-based approach** adjusts from **leaf to root** for each element.
+- **Heapify** adjusts from **root to leaf**, processing only internal nodes.
+- Direction matters: 
+  - Insertion: upward bubbling.
+  - Heapify: downward pushing.
+
+---
+
+### 🧪 Final Result
+
+After applying `buildHeap()` on the example array:
+```text
+Heapified Array (Max Heap): [40, 35, 30, 15, 10, 25, 5, 20]
+```
+
+All parent nodes are greater than their children. ✅
+
+---
+
+Here’s a detailed section you can add to your **README.md** to summarize the transcript about **Binary Heap as Priority Queue**. This includes the motivation, structure, operations, performance, and usage of heaps (Max Heap or Min Heap) to implement a priority queue efficiently.
+
+---
+
+## 📌 Binary Heap as a Priority Queue
+
+A **priority queue** is an abstract data structure where each element has a priority. Elements are inserted arbitrarily, but deletion always removes the element with the **highest priority**.
+
+---
+
+### 🧠 Key Concepts
+
+- **Each element** is associated with a priority.
+- **Insertion** happens arbitrarily (element + priority).
+- **Deletion** always removes the **highest-priority** element.
+- **Highest priority** may depend on:
+  - **Larger number = higher priority** → use a **Max Heap**.
+  - **Smaller number = higher priority** → use a **Min Heap**.
+
+---
+
+### 🔄 Naive Implementation (Array-Based)
+
+Inserting elements into an array is easy:
+- Insertion: **O(1)** (append at end).
+- Deletion:
+  - Must **search** for max/min: **O(n)**.
+  - **Shift** elements: up to **O(n)**.
+  - **Total deletion time**: **O(n)** worst case.
+
+> ❌ Not efficient for large-scale use.
+
+---
+
+### ✅ Efficient Priority Queue Using Binary Heap
+
+A **Binary Heap** (Max or Min) provides efficient insertions and deletions:
+
+| Operation | Max Heap Behavior                 | Time Complexity |
+|-----------|-----------------------------------|-----------------|
+| Insert    | Inserts at end and bubbles up     | `O(log n)`      |
+| Delete    | Removes root and heapifies down   | `O(log n)`      |
+| Find Max  | Always available at root (index 1)| `O(1)`          |
+
+#### 📍 Why a Heap Works Well
+- The **largest element** (Max Heap) is always at the root.
+- When deleted, the last element replaces root, and **heapify-down** restores structure.
+- Both **insert** and **delete** balance the tree via `log n` operations.
+
+---
+
+### ⚙️ Example: Max Heap as a Priority Queue
+
+**Priorities:** 4, 9, 5, 10, 6, 8, 3
+
+#### Insertions (Max Heap):
+- Insert 4 → Root.
+- Insert 9 → Bubbles to root (priority ↑).
+- Insert 5 → No bubble.
+- Insert 10 → Bubbles to top.
+- Insert 6, 8, 3 → Heap adjusts via swaps.
+
+The heap after insertions maintains the highest-priority (largest) at the top.
+
+#### Deletions:
+- Remove root (10).
+- Replace with last element, heapify down.
+- Next deletion removes next highest (9), and so on.
+
+> ✅ Each deletion takes only **O(log n)**.
+
+---
+
+### 🧭 Priority Type vs. Heap Type
+
+| Priority Rule                   | Heap Type |
+|--------------------------------|-----------|
+| Larger number = Higher priority | Max Heap  |
+| Smaller number = Higher priority | Min Heap  |
+
+> Choose heap type based on how your priority is defined.
+
+---
+
+### 🧮 Time Complexity Comparison
+
+| Implementation     | Insert Time | Delete Time | Find Max/Min |
+|--------------------|-------------|-------------|---------------|
+| **Array (unsorted)**  | O(1)        | O(n)        | O(n)          |
+| **Array (sorted)**    | O(n)        | O(1)        | O(1)          |
+| **Binary Heap**       | O(log n)   | O(log n)   | O(1)          |
+
+> 🏆 **Binary Heap** provides a **balanced** and **efficient** implementation for priority queues.
+
+---
+
+### 🏁 Conclusion
+
+- Binary Heaps are optimal for implementing **Priority Queues**.
+- Both **insertion and deletion** are efficient at `O(log n)` time.
+- Choose **Max Heap** or **Min Heap** based on your application's priority rules.
+- Widely used in scheduling, simulation systems, Dijkstra’s algorithm, etc.
+
+---
