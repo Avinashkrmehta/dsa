@@ -25,8 +25,17 @@
 ## Comparision of Bubble and Insertion Sort
 <img src="./images/imagel.png" width="500" />
 
+## Selection sort
+<img src="./images/imagem.png" width="500" />
+<img src="./images/imagen.png" width="500" />
 
+## Program of Selection sort
+<img src="./images/imageo.png" width="500" />
+<img src="./images/imagep.png" width="500" />
 
+## Analysis of Selection sort
+<img src="./images/imageq.png" width="500" />
+<img src="./images/imager.png" width="500" />
 
 
 ---
@@ -140,10 +149,6 @@ Sorting algorithms are categorized in two primary ways:
 
 ---
 
-## 🚀 What's Next
-
-We’ll start exploring these sorting algorithms **one by one**, beginning with **Bubble Sort**. Each will be discussed and analyzed in terms of the criteria mentioned above.
----
 
 ## 📚 Bubble Sort: Explained
 
@@ -690,9 +695,7 @@ void insertion_sort(int e[], int n)
   - **Worst case (reversed input):** O(n²)
 
 ---
-Here’s a clean and structured version of the **comparison between Bubble Sort and Insertion Sort**, formatted for a **README file**. This section is great for helping learners quickly understand the strengths and weaknesses of each algorithm.
 
----
 
 ## 🔄 Bubble Sort vs. Insertion Sort – Comparison
 
@@ -728,5 +731,302 @@ Here’s a clean and structured version of the **comparison between Bubble Sort 
   - Working with linked lists.
   - You expect the data to be partially sorted.
 - **Avoid Bubble Sort** in performance-critical applications.
+
+---
+# 🌟 Selection Sort Algorithm
+
+## 🧐 Why is it called "Selection Sort"?
+
+Because in each pass, we **select** the smallest (or largest) element from the unsorted portion and **place it in the correct position** in the sorted portion.
+
+---
+
+## 🔍 How It Works
+
+For an array of `n` elements:
+
+1. Start from index `i = 0`.
+2. Assume the element at `i` is the minimum.
+3. Loop `j` from `i + 1` to `n - 1`:
+   - If `arr[j] < arr[k]`, update `k = j`.
+4. After the loop, swap `arr[i]` and `arr[k]`.
+5. Repeat for `i = 0` to `n - 2`.
+
+---
+
+## 🧪 Step-by-Step Example
+
+Given the list:  
+📦 `[8, 6, 3, 2, 5, 4]`
+
+| Pass | Action                         | Array State             |
+|------|--------------------------------|--------------------------|
+| 1️⃣   | Swap 8 with 2 (min)             | `[2, 6, 3, 8, 5, 4]`     |
+| 2️⃣   | Swap 6 with 3                  | `[2, 3, 6, 8, 5, 4]`     |
+| 3️⃣   | Swap 6 with 4                  | `[2, 3, 4, 8, 5, 6]`     |
+| 4️⃣   | Swap 8 with 5                  | `[2, 3, 4, 5, 8, 6]`     |
+| 5️⃣   | Swap 8 with 6                  | `[2, 3, 4, 5, 6, 8]`     |
+
+🎉 Sorted!
+
+---
+
+## 🧠 Real-Life Analogy
+
+Imagine students are standing in a line and you want to arrange them based on marks 🎓:
+
+- Pick the first position.
+- Look through the rest to find who should stand there.
+- Swap and repeat until the line is sorted.
+
+---
+
+## ⏱️ Time & Space Complexity
+
+### 📊 Comparisons:
+- Total = `n(n - 1)/2` = **O(n²)**  
+- Fixed number of comparisons regardless of order
+
+### 🔁 Swaps:
+- Maximum = `n - 1` = **O(n)**  
+- One of the few algorithms with **minimal swaps**
+
+### 💾 Space:
+- In-place sorting → **O(1)**
+
+---
+
+## 💡 Key Characteristics
+
+| Feature          | Description                          |
+|------------------|--------------------------------------|
+| ⏳ Time           | O(n²) for all cases                 |
+| 💽 Space          | O(1) (In-place)                     |
+| 🔁 Swaps          | Only `n - 1` → very few             |
+| 🧩 Stable         | ❌ Not stable (but can be made so)  |
+| 🟢 Best Use Case  | When swap cost is high              |
+
+---
+
+## ✨ Highlights
+
+- ✅ Simple to implement
+- 🔄 Fixed comparisons
+- 🔂 Very few swaps
+- ❌ Not efficient for large datasets
+- 🧠 Great for learning sorting logic!
+
+---
+
+## ✅ Summary
+
+Selection Sort is great for learning and situations where you need:
+- Few swaps
+- Easy implementation
+- Consistent performance
+
+> 🧠 “Choose Selection Sort when **simplicity** and **minimal swaps** matter more than speed!”
+
+
+```markdown
+# ✨ Selection Sort Algorithm - Explained Step by Step
+
+Selection Sort is a classic sorting algorithm that selects the smallest element from the unsorted portion of the list and places it in its correct position in the sorted portion.
+
+---
+
+## 🎥 Transcript Summary
+
+This is a simplified and beautified explanation based on a lecture on **Selection Sort**. The goal is to walk you through how it works, using an example, and implement it using loops.
+
+---
+
+## 🧠 Key Idea
+
+In **each pass**, we:
+1. Select an index (starting from 0).
+2. Find the **smallest element** in the remaining unsorted part.
+3. Swap it with the element at the current index.
+4. Repeat for all elements (except the last, which will already be in place).
+
+---
+
+## 🔁 Algorithm Steps
+
+1. We loop from index `i = 0` to `n - 2` (total `n - 1` passes).
+2. In each pass:
+   - Set `k = i` (assume current index has the smallest element).
+   - Loop through the rest of the array with index `j` from `i+1` to `n-1`.
+   - If `arr[j] < arr[k]`, then update `k = j`.
+3. After the inner loop, `k` will point to the smallest element.
+4. Swap `arr[i]` with `arr[k]`.
+
+---
+
+## 🧪 Example
+
+Given an array of `n = 10` elements, say:
+
+📦 `arr = [29, 10, 14, 37, 13, 5, 3, 1, 18, 9]`
+
+- In the **first pass**, the smallest element (`1`) is found and swapped with the first element.
+- This continues for `n - 1` passes.
+
+---
+
+## 💻 Pseudocode
+
+```cpp
+for (int i = 0; i < n - 1; i++) {
+    int k = i;
+    for (int j = i + 1; j < n; j++) {
+        if (arr[j] < arr[k]) {
+            k = j;
+        }
+    }
+    // Swap arr[i] and arr[k]
+    swap(arr[i], arr[k]);
+}
+```
+
+---
+
+## 📊 Complexity Analysis
+
+| Type          | Complexity     |
+|---------------|----------------|
+| 🕒 Time (Best) | O(n²)          |
+| 🕒 Time (Avg)  | O(n²)          |
+| 🕒 Time (Worst)| O(n²)          |
+| 💾 Space       | O(1) (In-place)|
+| 🔁 Swaps       | O(n)           |
+
+---
+
+## 📌 Notes from the Transcript
+
+- ✅ Loop `i` goes from `0` to `n - 2` (outer loop).
+- ✅ Loop `j` goes from `i + 1` to `n - 1` (inner loop).
+- ✅ `k` keeps track of the index of the minimum element.
+- ✅ After inner loop, swap `arr[i]` with `arr[k]`.
+- ✅ Repeat until the array is sorted.
+- ✅ Total of `n - 1` passes.
+
+---
+
+## 🎯 Conclusion
+
+Selection Sort is:
+
+- 📚 **Great for understanding sorting logic**
+- 🛠️ **Simple to implement**
+- 🔄 **Predictable performance**
+- ⚠️ Not suitable for large datasets due to its O(n²) time complexity
+
+> 💡 **Pro Tip:** Use Selection Sort when you need a simple algorithm and minimal swaps, even if performance isn’t the highest priority.
+
+
+```markdown
+# 🔍 Selection Sort: Adaptive & Stable? Let's Explore!
+
+In this section, we explore whether **Selection Sort** is:
+- 🧠 **Adaptive**: Does it perform better on sorted data?
+- ⚖️ **Stable**: Does it maintain the relative order of equal elements?
+
+---
+
+## 🤔 What is Adaptive?
+
+An algorithm is **adaptive** if it performs **faster when the input is already sorted**.
+
+### 🔬 Let's Analyze
+
+Given a sorted list:
+
+📦 `arr = [2, 3, 5, 7, 8, 8, 9]`
+
+Selection Sort:
+- Still checks all elements.
+- Still performs all comparisons.
+- Performs swaps—even if it ends up swapping an element with itself!
+
+### ❌ Conclusion: **Not Adaptive**
+
+> Even if the list is sorted, Selection Sort performs the same number of operations 😓
+
+Unlike **Bubble Sort**, where we can detect if no swaps occurred and stop early, Selection Sort **lacks a mechanism** to recognize an already sorted list.
+
+---
+
+## ⚖️ What is Stability?
+
+An algorithm is **stable** if:
+> 🎯 "Equal elements retain their **original relative order** after sorting."
+
+### 🧪 Test Case: Check Stability
+
+Let’s consider:
+
+```
+arr = [
+  (8, "Black"),
+  (2, "Blue"),
+  (3, "Green"),
+  (5, "Yellow"),
+  (8, "Red"),
+  ...
+]
+```
+
+Selection Sort finds the smallest element and swaps it with the first element.
+
+✅ First pass:
+- Finds `2 (Blue)` and swaps it with `8 (Black)`
+
+🔁 Resulting list after one pass:
+```
+[
+  (2, "Blue"),
+  (8, "Red"),
+  (3, "Green"),
+  ...
+]
+```
+
+> 😱 Oops! `"Black"` and `"Red"` switched places!
+
+### ❌ Conclusion: **Not Stable**
+
+> Equal elements **do not** retain their original order. Stability is lost.
+
+---
+
+## 📌 Summary
+
+| Property      | Status       | Reason                                                                 |
+|---------------|--------------|------------------------------------------------------------------------|
+| 🧠 Adaptive    | ❌ No         | Performs same operations even when list is sorted                      |
+| ⚖️ Stable      | ❌ No         | Swapping doesn't preserve order of duplicate elements                  |
+
+---
+
+## 💪 Strengths of Selection Sort
+
+Despite its drawbacks, Selection Sort has some nice qualities:
+
+| Strength                             | Description                                                        |
+|--------------------------------------|--------------------------------------------------------------------|
+| 🔁 Minimal Swaps                     | It makes at most `n - 1` swaps, which can be useful in certain cases |
+| 👁️ Easy to Understand                | Simple to follow, great for learning                               |
+| 🛠️ In-place Sorting                  | Requires no extra space                                            |
+| 🧼 Clean Intermediate Steps           | Shows smallest element at the correct position in each pass        |
+
+---
+
+## 🔚 Final Thoughts
+
+🟡 **Selection Sort** is a basic sorting algorithm with clear steps, but it lacks adaptability and stability.
+
+> Use it where swap count matters more than time or stability 🧩
 
 ---
